@@ -1,4 +1,4 @@
-module github.com/123sabo/proglog
+module github.com/123sabo/distributed-services
 
 go 1.18
 

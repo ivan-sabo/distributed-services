@@ -1,4 +1,4 @@
-module github.com/123sabo/distributed-services
+module github.com/ivan-sabo/distributed-services
 
 go 1.18
 

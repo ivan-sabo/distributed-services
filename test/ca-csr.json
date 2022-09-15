@@ -1,0 +1,16 @@
+{
+    "CN": "distributed-services",
+    "key": {
+        "algo": "rsa",
+        "size": 2048
+    },
+    "names": [
+        {
+            "C": "HR",
+            "L": "DJ",
+            "ST": "SIB",
+            "O": "common ground",
+            "OU": "CA services"
+        }
+    ]
+}

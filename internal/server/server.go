@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 
-	api "github.com/123sabo/distributed-services/api/v1"
+	api "github.com/ivan-sabo/distributed-services/api/v1"
 	"google.golang.org/grpc"
 )
 
@@ -13,8 +13,8 @@ type Config struct {
 
 var _ api.LogServer = (*grpcServer)(nil)
 
-func NewGRPCServer(config *Config) (*grpc.Server, error) {
-	gsrv := grpc.NewServer()
+func NewGRPCServer(config *Config, opts ...grpc.ServerOption) (*grpc.Server, error) {
+	gsrv := grpc.NewServer(opts...)
 	srv, err := newgrpcServer(config)
 	if err != nil {
 		return nil, err
